@@ -1,0 +1,26 @@
+--- hooks/pre_imstall.lua
+
+local util = require("util")
+
+--- Returns several pieces of information for the installation: the version, the download URL, and a note.
+---
+--- @param ctx table SDK context
+--- @field ctx.version string Context version
+--- @return table Version information
+function PLUGIN:PreInstall(ctx)
+    local version = ctx.version
+    local platform = util.get_platform()
+    local download_url = "https://github.com/Kampfkarren/selene/releases/download/"
+        .. version
+        .. "/selene-"
+        .. version
+        .. "-"
+        .. platform
+        .. ".zip"
+
+    return {
+        version = version,
+        url = download_url,
+        note = "Downloading Selene: " .. version,
+    }
+end

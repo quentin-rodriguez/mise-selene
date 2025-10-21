@@ -3,17 +3,19 @@
 #MISE description="Run plugin tests - install and execute tool"
 set -euo pipefail
 
+version="0.27.0"
+
 mise plugin link --force selene .
 mise cache clear
-mise install selene@latest
+mise install "selene@$version"
 
 # Capture and display the output while also verifying it
-output=$(mise exec "selene@0.29.0" -- "selene" --version)
+output=$(mise exec "selene@$version" -- "selene" --version)
 echo "selene output: $output"
 
-if echo "$output" | grep -q '0.29.0'; then
+if echo "$output" | grep -q "$version"; then
     echo "✓ Tests passed"
 else
-    echo "✗ Test failed: expected version selene@0.29.0"
+    echo "✗ Test failed: expected version selene@$version"
     exit 1
 fi

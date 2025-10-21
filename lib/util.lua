@@ -11,17 +11,17 @@ function M.headers()
     }
 end
 
---- Returns the name of the platform.
+--- Returns the name of the OS.
 ---
---- @return string Platform name
-function M.get_platform()
-    local platform = RUNTIME.osType
+--- @return string OS name
+function M.get_os()
+    local os = RUNTIME.osType
 
-    if platform == "darwin" then
+    if os == "darwin" then
         return "macos"
     end
 
-    return platform
+    return os
 end
 
 --- Returns a table containing the results of applying the callback.

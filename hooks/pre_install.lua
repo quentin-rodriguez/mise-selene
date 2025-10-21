@@ -9,13 +9,13 @@ local util = require("util")
 --- @return table Version information
 function PLUGIN:PreInstall(ctx)
     local version = ctx.version
-    local platform = util.get_platform()
+    local os = util.get_os()
     local download_url = "https://github.com/Kampfkarren/selene/releases/download/"
         .. version
         .. "/selene-"
         .. version
         .. "-"
-        .. platform
+        .. os
         .. ".zip"
 
     return {

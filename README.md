@@ -26,7 +26,7 @@ mise use -g selene@0.29.0
 mise use selene@0.29.0
 ```
 
-## Local development
+## Development
 
 This project uses [hk](https://hk.jdx.dev) for pre-commit hooks and linting.
 

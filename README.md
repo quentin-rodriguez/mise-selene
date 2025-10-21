@@ -2,7 +2,7 @@
 
 A [mise](https://mise.jdx.dev) plugin for [selene](https://kampfkarren.github.io/selene) - lua linter written in Rust.
 
-For more information, see the [repository](https://github.com/Kampfkarren/selene) or the [documentation](https://kampfkarren.github.io/selene)
+For more information, see the [repository](https://github.com/Kampfkarren/selene)
 
 ## Installation
 

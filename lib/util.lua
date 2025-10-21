@@ -17,7 +17,7 @@ end
 function M.get_platform()
     local platform = RUNTIME.osType
 
-    if platform == "Darwin" then
+    if platform == "darwin" then
         return "macos"
     end
 

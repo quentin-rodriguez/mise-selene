@@ -12,7 +12,7 @@ function PLUGIN:PreInstall(ctx)
     local os = util.get_os()
     local download_url = "https://github.com/Kampfkarren/selene/releases/download/"
         .. version
-        .. "/selene-"
+        .. "/selene-light-"
         .. version
         .. "-"
         .. os

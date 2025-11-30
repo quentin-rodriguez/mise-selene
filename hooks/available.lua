@@ -5,7 +5,6 @@ local json = require("json")
 local util = require("util")
 
 --- Retrieve a list of versions in the SDK context.
----
 --- @param ctx table SDK context
 --- @return table
 function PLUGIN:Available(ctx)

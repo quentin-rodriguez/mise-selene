@@ -3,7 +3,6 @@
 local cmd = require("cmd")
 
 --- An extension that allows additional actions to be called after PreInstall.
----
 --- @param ctx table SDK context
 --- @field ctx.sdkInfo SDK informations
 function PLUGIN:PostInstall(ctx)

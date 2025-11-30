@@ -3,7 +3,6 @@
 local util = require("util")
 
 --- Returns several pieces of information for the installation: the version, the download URL, and a note.
----
 --- @param ctx table SDK context
 --- @field ctx.version string Context version
 --- @return table Version information

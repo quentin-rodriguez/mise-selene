@@ -43,8 +43,6 @@ mise run ci
 
 ## Licence
 
-The semver tool itself is licensed under Apache 2.0.
-
 This plugin is licensed under the MIT License. 
 
 See [LICENSE](LICENSE) for details.
